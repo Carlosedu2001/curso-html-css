@@ -1,9 +1,13 @@
 body {
     background: #f7f7f7;
     font-family: verdana;
+    max-width: 900px;
+    margin: auto;
 }
 
 .photo {
+    margin-top: 5%;
+    margin-left: 40%;
     border: 5px solid #505050;
     border-radius: 50%;
 }
@@ -13,6 +17,7 @@ body {
 }
 
 #title {
+    margin-left: 30%;
     font-size: 40px;
     text-transform: uppercase;
 }
@@ -41,13 +46,16 @@ a {
     margin: 0;
     margin-bottom: 15px;
     text-transform: capitalize;
+    text-align: justify;
 }
 
 .post-image {
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .contacts_list {
+    margin-left: 40%;
     list-style-type: none;
     padding-left: 15px;
 }

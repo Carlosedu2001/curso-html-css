@@ -1,2 +1,2 @@
-# curso-html-css
-Projetos em HTML e CSS
+# Curso HTML e CSS
+## Projetos em HTML e CSS

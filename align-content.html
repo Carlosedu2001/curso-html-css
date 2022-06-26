@@ -6,12 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos - align content</title>
     <style>
-        .conteiner {
-            
+        .container {
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        
+        .item {
+            background-color: blue;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex_start {
+            align-content: flex-start;
+        }
+
+        .flex_end {
+            align-content: flex-end;
+        }
+
+        .space_around {
+            align-content: space-around;
+        }
+
+        .space_between {
+            align-content: space-between;
         }
     </style>
 </head>
 <body>
-    
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore always free from repetition, injected humour</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is therefore from repetition, injected humour, or non-characteristic</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <p>flex_start</p>
+    <div class="container flex_start">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is thereforeasasasd</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <p>flex_end</p>
+    <div class="container flex_end">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is thereforeasdasdasd</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <p>space_around</p>
+    <div class="container space_around">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is thereforeasdasdasd</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
+
+    <p>space_between</p>
+    <div class="container space_between">
+        <div class="item">Lorem Ipsum is therefore always free from</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore always free</div>
+        <div class="item">Lorem Ipsum is thereforeasdasdasd</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+        <div class="item">Lorem Ipsum is therefore</div>
+    </div>
 </body>
 </html>

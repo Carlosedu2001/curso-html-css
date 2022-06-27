@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex_grow</title>
+    <style>
+        .flex_container {
+            display: flex;
+            border: 2px solid black;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .items {
+            background: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .fg_0 {
+            flex-grow: 0;
+        }
+
+        .fg_1 {
+            flex-grow: 1;
+        }
+
+        .fg_2 {
+            flex-grow: 2;
+        }
+
+        .fg_3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>flex_grow: 0</p>
+    <div class="flex_container">
+        <div class="items fg_0">A</div>
+        <div class="items fg_0">B</div>
+        <div class="items fg_0">C</div>
+        <div class="items fg_0">D</div>
+    </div>
+
+    <p>flex_grow: 1</p>
+    <div class="flex_container">
+        <div class="items fg_1">A</div>
+        <div class="items fg_1">B</div>
+        <div class="items fg_1">C</div>
+        <div class="items fg_1">D</div>
+    </div>
+
+    <p>flex_grow alternado</p>
+    <div class="flex_container">
+        <div class="items fg_1">AAA</div>
+        <div class="items fg_2">BBBBB</div>
+        <div class="items fg_3">CCCCCCCC</div>
+        <div class="items fg_1">DDD</div>
+    </div>
+</body>
+</html>
